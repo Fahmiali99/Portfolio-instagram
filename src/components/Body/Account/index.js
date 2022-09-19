@@ -51,7 +51,7 @@ function index() {
         {menu.map((item) => (
           <a href={item.href} key={item.id}>
             <div className="p-1">
-              <button class="btn btn-wide md:w-full sm:w-full flex justify-start">
+              <button class="btn bg-slate-700 hover:bg-slate-800 w-full md:w-full sm:w-full flex justify-start">
                 {/* <div className=" flex items-center"> */}
                 <img src={item.image} alt="" width={21} />
                 <h1

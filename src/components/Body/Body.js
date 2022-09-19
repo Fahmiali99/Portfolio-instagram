@@ -16,7 +16,7 @@ function Body() {
               <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
                   className={
-                    "text-xs font-bold  px-5 py-3 shadow-lg rounded block leading-normal " +
+                    " text-1xl  px-5 py-3 shadow-lg rounded block leading-normal " +
                     (openTab === 1
                       ? " bg-slate-600 text-white"
                       : "border bg-transparent")
@@ -35,7 +35,7 @@ function Body() {
               <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
                   className={
-                    "text-xs font-bold  px-5 py-3 shadow-lg rounded block leading-normal " +
+                    " text-1xl  px-5 py-3 shadow-lg rounded block leading-normal " +
                     (openTab === 2
                       ? " bg-slate-600 text-white"
                       : "border bg-transparent")

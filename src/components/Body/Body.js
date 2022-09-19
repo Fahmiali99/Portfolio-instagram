@@ -29,7 +29,8 @@ function Body() {
                   href="#link1"
                   role="tablist"
                 >
-                  <i className="fas fa-space-shuttle text-base mr-1"></i> Sosmed
+                  <i className="fas fa-space-shuttle text-base mr-1"></i>{" "}
+                  Account
                 </a>
               </li>
               <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">

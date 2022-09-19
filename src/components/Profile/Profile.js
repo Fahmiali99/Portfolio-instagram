@@ -25,12 +25,12 @@ const Profile = () => {
               </div>
 
               <div className=" pt-14">
-                <h1 className=" text-2xl font-bold text-center pb-3">
+                <h1 className=" text-2xl font-bold text-center pb-3 text-white">
                   {item.name}
                 </h1>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center text-white">
                   <Icon />
-                  <h2 className="mx-1">{item.address}</h2>
+                  <h2 className="mx-1 ">{item.address}</h2>
                 </div>
               </div>
             </div>

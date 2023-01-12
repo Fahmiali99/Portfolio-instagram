@@ -42,7 +42,7 @@ function index() {
       id: 6,
       name: "Personal Website",
       image: web,
-      href: "https://fahmiali.netlify.app/",
+      href: "https://fahmialihusni.vercel.app/",
     },
   ];
   return (

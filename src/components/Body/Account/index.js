@@ -5,53 +5,55 @@ import youtube from "../../../assets/youtube.png";
 import linkedin from "../../../assets/linkedin.png";
 import github from "../../../assets/github.png";
 import web from "../../../assets/web.png";
-
+const menu = [
+  {
+    id: 1,
+    name: "Instagram",
+    image: instagram,
+    href: "https://www.instagram.com/fahmi_ali13/",
+  },
+  {
+    id: 2,
+    name: "Facebook",
+    image: facebook,
+    href: "https://www.facebook.com/LARE.USING.13/",
+  },
+  {
+    id: 3,
+    name: "Youtube",
+    image: youtube,
+    href: "https://www.youtube.com/channel/UCpuJBYMaQCZht85hw5N1CBw",
+  },
+  {
+    id: 4,
+    name: "Linkedin",
+    image: linkedin,
+    href: "https://www.linkedin.com/in/fahmialihusni/",
+  },
+  {
+    id: 5,
+    name: "GitHub",
+    image: github,
+    href: "https://github.com/Fahmiali99",
+  },
+  {
+    id: 6,
+    name: "Personal Website",
+    image: web,
+    href: "https://fahmialihusni.com/",
+  },
+];
 function index() {
-  const menu = [
-    {
-      id: 1,
-      name: "Instagram",
-      image: instagram,
-      href: "https://www.instagram.com/fahmi_ali13/",
-    },
-    {
-      id: 2,
-      name: "Facebook",
-      image: facebook,
-      href: "https://www.facebook.com/LARE.USING.13/",
-    },
-    {
-      id: 3,
-      name: "Youtube",
-      image: youtube,
-      href: "https://www.youtube.com/channel/UCpuJBYMaQCZht85hw5N1CBw",
-    },
-    {
-      id: 4,
-      name: "Linkedin",
-      image: linkedin,
-      href: "https://www.linkedin.com/in/fahmialihusni/",
-    },
-    {
-      id: 5,
-      name: "GitHub",
-      image: github,
-      href: "https://github.com/Fahmiali99",
-    },
-    {
-      id: 6,
-      name: "Personal Website",
-      image: web,
-      href: "https://fahmialihusni.vercel.app/",
-    },
-  ];
   return (
     <div>
       <div>
         {menu.map((item) => (
-          <a href={item.href} key={item.id}>
-            <div className="p-1">
-              <button class="btn bg-slate-700 hover:bg-slate-800 w-full md:w-full sm:w-full flex justify-start border-none">
+          <div key={item.id} className="p-1">
+            <button
+              onClick={() => window.open(item.href)}
+              class="btn bg-slate-700 hover:bg-slate-800 w-full md:w-full sm:w-full flex justify-start border-none"
+            >
+              <div className="flex items-center">
                 {/* <div className=" flex items-center"> */}
                 <img src={item.image} alt="" width={21} />
                 <h1
@@ -61,9 +63,9 @@ function index() {
                   {item.name}
                 </h1>
                 {/* </div> */}
-              </button>
-            </div>
-          </a>
+              </div>
+            </button>
+          </div>
         ))}
       </div>
     </div>
